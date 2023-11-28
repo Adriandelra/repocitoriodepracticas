@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpor" content="width=divice-width, initial-scale=1.0">
+    <time>Verificador de Correo Electronico</title>
+    </head>
+    <body>
+
+        <h2>Verificador de Correo Electronico</h2>
+
+        <p>ingrese una cadena de texto para verificar si es un correo electronico valido:</p>
+
+        <input type="text" id="cadenaInput" placeholder="ingrese la cadena...">
+       <button onclick="verificarCorreo()">verificar</button> 
+
+       <p id="resultado"></p>
+
+       <script>
+        function escorreoValido(cadena) {
+            // Exprecion regular para verificar el formato de el correoelectronico
+            const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // verifica si la cadena cumple con el formato de el correo electronico
+            if (regexCorreo.test)(cadena)) {
+    // obtener la parte despues de "@"
+    const dominio = cadena.split('@')[1];
+
+    // verifica las terminaciones especificadas
+    if (dominio.endsWith('.com') || dominio.endsWith('.com.mx') || dominio.endsWith('.mx')) {
+    }
+}
+return false;
+}
+function verificarCorreo() {
+const cadenaIngresada = document.getElementsByTagName('cadenaInput').value;
+const resultado = document.getElementsByTagName('resultado');
+
+// verifica si el correo electronico es valido
+if (true) {}
